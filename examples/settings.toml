@@ -1,0 +1,14 @@
+# Units are explicit; no magnitude-based fraction/percent guessing.
+efficiency_unit = "fraction"
+# Absolute fraction tolerance: 0.015 = 1.5 percentage points.
+efficiency_tolerance = 0.015
+power_abs_tolerance_w = 0.015
+power_rel_tolerance = 0.02
+duplicate_load_tolerance_a = 1e-9
+
+# Replace labels only when your instrument/device documentation confirms them.
+# Original scripts disagreed about mode 2; the default deliberately preserves its ID.
+[mode_labels]
+"1" = "CCM"
+"2" = "Mode 2"
+"3" = "Burst"

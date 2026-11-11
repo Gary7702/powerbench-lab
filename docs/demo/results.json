@@ -1,0 +1,2361 @@
+{
+  "schema_version": "1.0",
+  "package_version": "0.1.0",
+  "synthetic": true,
+  "contains_synthetic": true,
+  "counts": {
+    "files": 8,
+    "runs": 8,
+    "measurements": 96,
+    "failed_files": 0,
+    "skipped_files": 0,
+    "warnings": 9,
+    "errors": 0
+  },
+  "units": {
+    "current": "A",
+    "voltage": "V",
+    "power": "W",
+    "frequency": "kHz",
+    "efficiency": "fraction"
+  },
+  "method": {
+    "load_regulation": "100*(max(Vout)-mean(Vout))/mean(Vout) and 100*(min(Vout)-mean(Vout))/mean(Vout)",
+    "span": "100*(max(Vout)-min(Vout))/mean(Vout)",
+    "line_regulation": "Linear interpolation at common actual load, fixed sample/channel/Vout/frequency/mode; no extrapolation.",
+    "limitations": "Descriptive measurements, not datasheet pass/fail or uncertainty-qualified metrology. Mode labels are configurable."
+  },
+  "settings": {
+    "efficiency_unit": "fraction",
+    "efficiency_tolerance": 0.015,
+    "power_abs_tolerance_w": 0.015,
+    "power_rel_tolerance": 0.02,
+    "duplicate_load_tolerance_a": 1e-09,
+    "mode_labels": {
+      "1": "CCM",
+      "2": "Mode 2",
+      "3": "Burst"
+    }
+  },
+  "runs": [
+    {
+      "run_id": "demo-ch1-vin8-mode1.json:b77fe7588850",
+      "source": "demo-ch1-vin8-mode1.json",
+      "sha256": "b77fe75888503ea9cac644a3ed2e1eefca19b0164a21e987e26a662ba6754f64",
+      "synthetic": true,
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vin_v": 8.0,
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "1",
+        "timestamp": null
+      },
+      "measurements": [
+        {
+          "point": 1,
+          "load_a": 0.0,
+          "vout_v": 3.30495,
+          "vin_v": 8.0,
+          "iin_a": 0.008125,
+          "pout_w": 0.0,
+          "pin_w": 0.065,
+          "loss_w": 0.065,
+          "efficiency": 0.0,
+          "page": 1,
+          "row": 2,
+          "flags": [
+            "zero_load"
+          ],
+          "table": 1
+        },
+        {
+          "point": 2,
+          "load_a": 0.025,
+          "vout_v": 3.304868,
+          "vin_v": 8.00005,
+          "iin_a": 0.018569,
+          "pout_w": 0.082622,
+          "pin_w": 0.148556,
+          "loss_w": 0.065934,
+          "efficiency": 0.556165,
+          "page": 1,
+          "row": 3,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 3,
+          "load_a": 0.05,
+          "vout_v": 3.304785,
+          "vin_v": 8.0001,
+          "iin_a": 0.029028,
+          "pout_w": 0.165239,
+          "pin_w": 0.232227,
+          "loss_w": 0.066988,
+          "efficiency": 0.711543,
+          "page": 1,
+          "row": 4,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 4,
+          "load_a": 0.1,
+          "vout_v": 3.30462,
+          "vin_v": 8.0002,
+          "iin_a": 0.049988,
+          "pout_w": 0.330462,
+          "pin_w": 0.399912,
+          "loss_w": 0.06945,
+          "efficiency": 0.826337,
+          "page": 1,
+          "row": 5,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 5,
+          "load_a": 0.2,
+          "vout_v": 3.30429,
+          "vin_v": 8.0004,
+          "iin_a": 0.092078,
+          "pout_w": 0.660858,
+          "pin_w": 0.736658,
+          "loss_w": 0.0758,
+          "efficiency": 0.897103,
+          "page": 1,
+          "row": 6,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 6,
+          "load_a": 0.4,
+          "vout_v": 3.30363,
+          "vin_v": 8.0008,
+          "iin_a": 0.176939,
+          "pout_w": 1.321452,
+          "pin_w": 1.415652,
+          "loss_w": 0.0942,
+          "efficiency": 0.933458,
+          "page": 1,
+          "row": 7,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 7,
+          "load_a": 0.65,
+          "vout_v": 3.302805,
+          "vin_v": 8.0013,
+          "iin_a": 0.284293,
+          "pout_w": 2.146823,
+          "pin_w": 2.274711,
+          "loss_w": 0.127888,
+          "efficiency": 0.943779,
+          "page": 1,
+          "row": 8,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 8,
+          "load_a": 1.0,
+          "vout_v": 3.30165,
+          "vin_v": 8.002,
+          "iin_a": 0.436972,
+          "pout_w": 3.30165,
+          "pin_w": 3.49665,
+          "loss_w": 0.195,
+          "efficiency": 0.944232,
+          "page": 1,
+          "row": 9,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 9,
+          "load_a": 1.5,
+          "vout_v": 3.3,
+          "vin_v": 8.003,
+          "iin_a": 0.659909,
+          "pout_w": 4.95,
+          "pin_w": 5.28125,
+          "loss_w": 0.33125,
+          "efficiency": 0.937278,
+          "page": 1,
+          "row": 10,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 10,
+          "load_a": 2.0,
+          "vout_v": 3.29835,
+          "vin_v": 8.004,
+          "iin_a": 0.888518,
+          "pout_w": 6.5967,
+          "pin_w": 7.1117,
+          "loss_w": 0.515,
+          "efficiency": 0.927584,
+          "page": 1,
+          "row": 11,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 11,
+          "load_a": 2.5,
+          "vout_v": 3.2967,
+          "vin_v": 8.005,
+          "iin_a": 1.122798,
+          "pout_w": 8.24175,
+          "pin_w": 8.988,
+          "loss_w": 0.74625,
+          "efficiency": 0.916973,
+          "page": 1,
+          "row": 12,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 12,
+          "load_a": 3.0,
+          "vout_v": 3.29505,
+          "vin_v": 8.006,
+          "iin_a": 1.362747,
+          "pout_w": 9.88515,
+          "pin_w": 10.91015,
+          "loss_w": 1.025,
+          "efficiency": 0.906051,
+          "page": 1,
+          "row": 13,
+          "flags": [],
+          "table": 1
+        }
+      ],
+      "issues": [
+        {
+          "code": "zero_load",
+          "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+          "source": "demo-ch1-vin8-mode1.json",
+          "severity": "warning",
+          "page": 1,
+          "row": 2,
+          "field": "load_a",
+          "table": 1
+        }
+      ]
+    },
+    {
+      "run_id": "demo-ch1-vin8-mode2.json:1682cc848de0",
+      "source": "demo-ch1-vin8-mode2.json",
+      "sha256": "1682cc848de07aefd41ea210e0ca5d296a59f430b92c7a0b61eddc6c0449f546",
+      "synthetic": true,
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vin_v": 8.0,
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "2",
+        "timestamp": null
+      },
+      "measurements": [
+        {
+          "point": 1,
+          "load_a": 0.0,
+          "vout_v": 3.30495,
+          "vin_v": 8.0,
+          "iin_a": 0.0015,
+          "pout_w": 0.0,
+          "pin_w": 0.012,
+          "loss_w": 0.012,
+          "efficiency": 0.0,
+          "page": 1,
+          "row": 2,
+          "flags": [
+            "zero_load"
+          ],
+          "table": 1
+        },
+        {
+          "point": 2,
+          "load_a": 0.025,
+          "vout_v": 3.304868,
+          "vin_v": 8.00005,
+          "iin_a": 0.011946,
+          "pout_w": 0.082622,
+          "pin_w": 0.095572,
+          "loss_w": 0.01295,
+          "efficiency": 0.8645,
+          "page": 1,
+          "row": 3,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 3,
+          "load_a": 0.05,
+          "vout_v": 3.304785,
+          "vin_v": 8.0001,
+          "iin_a": 0.022411,
+          "pout_w": 0.165239,
+          "pin_w": 0.179289,
+          "loss_w": 0.01405,
+          "efficiency": 0.921635,
+          "page": 1,
+          "row": 4,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 4,
+          "load_a": 0.1,
+          "vout_v": 3.30462,
+          "vin_v": 8.0002,
+          "iin_a": 0.043394,
+          "pout_w": 0.330462,
+          "pin_w": 0.347162,
+          "loss_w": 0.0167,
+          "efficiency": 0.951896,
+          "page": 1,
+          "row": 5,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 5,
+          "load_a": 0.2,
+          "vout_v": 3.30429,
+          "vin_v": 8.0004,
+          "iin_a": 0.085578,
+          "pout_w": 0.660858,
+          "pin_w": 0.684658,
+          "loss_w": 0.0238,
+          "efficiency": 0.965238,
+          "page": 1,
+          "row": 6,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 6,
+          "load_a": 0.4,
+          "vout_v": 3.30363,
+          "vin_v": 8.0008,
+          "iin_a": 0.170814,
+          "pout_w": 1.321452,
+          "pin_w": 1.366652,
+          "loss_w": 0.0452,
+          "efficiency": 0.966926,
+          "page": 1,
+          "row": 7,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 7,
+          "load_a": 0.65,
+          "vout_v": 3.302805,
+          "vin_v": 8.0013,
+          "iin_a": 0.278989,
+          "pout_w": 2.146823,
+          "pin_w": 2.232273,
+          "loss_w": 0.08545,
+          "efficiency": 0.961721,
+          "page": 1,
+          "row": 8,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 8,
+          "load_a": 1.0,
+          "vout_v": 3.30165,
+          "vin_v": 8.002,
+          "iin_a": 0.433473,
+          "pout_w": 3.30165,
+          "pin_w": 3.46865,
+          "loss_w": 0.167,
+          "efficiency": 0.951854,
+          "page": 1,
+          "row": 9,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 9,
+          "load_a": 1.5,
+          "vout_v": 3.3,
+          "vin_v": 8.003,
+          "iin_a": 0.660315,
+          "pout_w": 4.95,
+          "pin_w": 5.2845,
+          "loss_w": 0.3345,
+          "efficiency": 0.936702,
+          "page": 1,
+          "row": 10,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 10,
+          "load_a": 2.0,
+          "vout_v": 3.29835,
+          "vin_v": 8.004,
+          "iin_a": 0.89439,
+          "pout_w": 6.5967,
+          "pin_w": 7.1587,
+          "loss_w": 0.562,
+          "efficiency": 0.921494,
+          "page": 1,
+          "row": 11,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 11,
+          "load_a": 2.5,
+          "vout_v": 3.2967,
+          "vin_v": 8.005,
+          "iin_a": 1.135696,
+          "pout_w": 8.24175,
+          "pin_w": 9.09125,
+          "loss_w": 0.8495,
+          "efficiency": 0.906559,
+          "page": 1,
+          "row": 12,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 12,
+          "load_a": 3.0,
+          "vout_v": 3.29505,
+          "vin_v": 8.006,
+          "iin_a": 1.384231,
+          "pout_w": 9.88515,
+          "pin_w": 11.08215,
+          "loss_w": 1.197,
+          "efficiency": 0.891988,
+          "page": 1,
+          "row": 13,
+          "flags": [],
+          "table": 1
+        }
+      ],
+      "issues": [
+        {
+          "code": "zero_load",
+          "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+          "source": "demo-ch1-vin8-mode2.json",
+          "severity": "warning",
+          "page": 1,
+          "row": 2,
+          "field": "load_a",
+          "table": 1
+        }
+      ]
+    },
+    {
+      "run_id": "demo-ch1-vin14-mode1.json:83f8aa4625a6",
+      "source": "demo-ch1-vin14-mode1.json",
+      "sha256": "83f8aa4625a64d5173724eb31edc8af72ba8dff66b4605c557c3596232cd4e27",
+      "synthetic": true,
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vin_v": 14.0,
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "1",
+        "timestamp": null
+      },
+      "measurements": [
+        {
+          "point": 1,
+          "load_a": 0.0,
+          "vout_v": 3.305544,
+          "vin_v": 14.0,
+          "iin_a": 0.005071,
+          "pout_w": 0.0,
+          "pin_w": 0.071,
+          "loss_w": 0.071,
+          "efficiency": 0.0,
+          "page": 1,
+          "row": 2,
+          "flags": [
+            "zero_load"
+          ],
+          "table": 1
+        },
+        {
+          "point": 2,
+          "load_a": 0.025,
+          "vout_v": 3.305462,
+          "vin_v": 14.00005,
+          "iin_a": 0.011041,
+          "pout_w": 0.082637,
+          "pin_w": 0.154571,
+          "loss_w": 0.071934,
+          "efficiency": 0.534619,
+          "page": 1,
+          "row": 3,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 3,
+          "load_a": 0.05,
+          "vout_v": 3.305379,
+          "vin_v": 14.0001,
+          "iin_a": 0.017018,
+          "pout_w": 0.165269,
+          "pin_w": 0.238256,
+          "loss_w": 0.072988,
+          "efficiency": 0.69366,
+          "page": 1,
+          "row": 4,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 4,
+          "load_a": 0.1,
+          "vout_v": 3.305214,
+          "vin_v": 14.0002,
+          "iin_a": 0.028998,
+          "pout_w": 0.330521,
+          "pin_w": 0.405971,
+          "loss_w": 0.07545,
+          "efficiency": 0.814149,
+          "page": 1,
+          "row": 5,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 5,
+          "load_a": 0.2,
+          "vout_v": 3.304884,
+          "vin_v": 14.0004,
+          "iin_a": 0.053054,
+          "pout_w": 0.660977,
+          "pin_w": 0.742777,
+          "loss_w": 0.0818,
+          "efficiency": 0.889873,
+          "page": 1,
+          "row": 6,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 6,
+          "load_a": 0.4,
+          "vout_v": 3.304224,
+          "vin_v": 14.0008,
+          "iin_a": 0.101558,
+          "pout_w": 1.32169,
+          "pin_w": 1.42189,
+          "loss_w": 0.1002,
+          "efficiency": 0.92953,
+          "page": 1,
+          "row": 7,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 7,
+          "load_a": 0.65,
+          "vout_v": 3.303399,
+          "vin_v": 14.0013,
+          "iin_a": 0.16292,
+          "pout_w": 2.147209,
+          "pin_w": 2.281097,
+          "loss_w": 0.133888,
+          "efficiency": 0.941306,
+          "page": 1,
+          "row": 8,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 8,
+          "load_a": 1.0,
+          "vout_v": 3.302244,
+          "vin_v": 14.002,
+          "iin_a": 0.250196,
+          "pout_w": 3.302244,
+          "pin_w": 3.503244,
+          "loss_w": 0.201,
+          "efficiency": 0.942625,
+          "page": 1,
+          "row": 9,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 9,
+          "load_a": 1.5,
+          "vout_v": 3.300594,
+          "vin_v": 14.003,
+          "iin_a": 0.377643,
+          "pout_w": 4.950891,
+          "pin_w": 5.288141,
+          "loss_w": 0.33725,
+          "efficiency": 0.936225,
+          "page": 1,
+          "row": 10,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 10,
+          "load_a": 2.0,
+          "vout_v": 3.298944,
+          "vin_v": 14.004,
+          "iin_a": 0.508347,
+          "pout_w": 6.597888,
+          "pin_w": 7.118888,
+          "loss_w": 0.521,
+          "efficiency": 0.926814,
+          "page": 1,
+          "row": 11,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 11,
+          "load_a": 2.5,
+          "vout_v": 3.297294,
+          "vin_v": 14.005,
+          "iin_a": 0.642305,
+          "pout_w": 8.243235,
+          "pin_w": 8.995485,
+          "loss_w": 0.75225,
+          "efficiency": 0.916375,
+          "page": 1,
+          "row": 12,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 12,
+          "load_a": 3.0,
+          "vout_v": 3.295644,
+          "vin_v": 14.006,
+          "iin_a": 0.779518,
+          "pout_w": 9.886932,
+          "pin_w": 10.917932,
+          "loss_w": 1.031,
+          "efficiency": 0.905568,
+          "page": 1,
+          "row": 13,
+          "flags": [],
+          "table": 1
+        }
+      ],
+      "issues": [
+        {
+          "code": "zero_load",
+          "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+          "source": "demo-ch1-vin14-mode1.json",
+          "severity": "warning",
+          "page": 1,
+          "row": 2,
+          "field": "load_a",
+          "table": 1
+        }
+      ]
+    },
+    {
+      "run_id": "demo-ch1-vin14-mode2.json:967b952c91e4",
+      "source": "demo-ch1-vin14-mode2.json",
+      "sha256": "967b952c91e474da2cd9efbd6d2479510785acabe81507fd872b54343abdc7ce",
+      "synthetic": true,
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vin_v": 14.0,
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "2",
+        "timestamp": null
+      },
+      "measurements": [
+        {
+          "point": 1,
+          "load_a": 0.0,
+          "vout_v": 3.305544,
+          "vin_v": 14.0,
+          "iin_a": 0.001286,
+          "pout_w": 0.0,
+          "pin_w": 0.018,
+          "loss_w": 0.018,
+          "efficiency": 0.0,
+          "page": 1,
+          "row": 2,
+          "flags": [
+            "zero_load"
+          ],
+          "table": 1
+        },
+        {
+          "point": 2,
+          "load_a": 0.025,
+          "vout_v": 3.305462,
+          "vin_v": 14.00005,
+          "iin_a": 0.007256,
+          "pout_w": 0.082637,
+          "pin_w": 0.101587,
+          "loss_w": 0.01895,
+          "efficiency": 0.81346,
+          "page": 1,
+          "row": 3,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 3,
+          "load_a": 0.05,
+          "vout_v": 3.305379,
+          "vin_v": 14.0001,
+          "iin_a": 0.013237,
+          "pout_w": 0.165269,
+          "pin_w": 0.185319,
+          "loss_w": 0.02005,
+          "efficiency": 0.891808,
+          "page": 1,
+          "row": 4,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 4,
+          "load_a": 0.1,
+          "vout_v": 3.305214,
+          "vin_v": 14.0002,
+          "iin_a": 0.02523,
+          "pout_w": 0.330521,
+          "pin_w": 0.353221,
+          "loss_w": 0.0227,
+          "efficiency": 0.935734,
+          "page": 1,
+          "row": 5,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 5,
+          "load_a": 0.2,
+          "vout_v": 3.304884,
+          "vin_v": 14.0004,
+          "iin_a": 0.04934,
+          "pout_w": 0.660977,
+          "pin_w": 0.690777,
+          "loss_w": 0.0298,
+          "efficiency": 0.95686,
+          "page": 1,
+          "row": 6,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 6,
+          "load_a": 0.4,
+          "vout_v": 3.304224,
+          "vin_v": 14.0008,
+          "iin_a": 0.098058,
+          "pout_w": 1.32169,
+          "pin_w": 1.37289,
+          "loss_w": 0.0512,
+          "efficiency": 0.962706,
+          "page": 1,
+          "row": 7,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 7,
+          "load_a": 0.65,
+          "vout_v": 3.303399,
+          "vin_v": 14.0013,
+          "iin_a": 0.159889,
+          "pout_w": 2.147209,
+          "pin_w": 2.238659,
+          "loss_w": 0.09145,
+          "efficiency": 0.95915,
+          "page": 1,
+          "row": 8,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 8,
+          "load_a": 1.0,
+          "vout_v": 3.302244,
+          "vin_v": 14.002,
+          "iin_a": 0.248196,
+          "pout_w": 3.302244,
+          "pin_w": 3.475244,
+          "loss_w": 0.173,
+          "efficiency": 0.950219,
+          "page": 1,
+          "row": 9,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 9,
+          "load_a": 1.5,
+          "vout_v": 3.300594,
+          "vin_v": 14.003,
+          "iin_a": 0.377876,
+          "pout_w": 4.950891,
+          "pin_w": 5.291391,
+          "loss_w": 0.3405,
+          "efficiency": 0.93565,
+          "page": 1,
+          "row": 10,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 10,
+          "load_a": 2.0,
+          "vout_v": 3.298944,
+          "vin_v": 14.004,
+          "iin_a": 0.511703,
+          "pout_w": 6.597888,
+          "pin_w": 7.165888,
+          "loss_w": 0.568,
+          "efficiency": 0.920736,
+          "page": 1,
+          "row": 11,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 11,
+          "load_a": 2.5,
+          "vout_v": 3.297294,
+          "vin_v": 14.005,
+          "iin_a": 0.649678,
+          "pout_w": 8.243235,
+          "pin_w": 9.098735,
+          "loss_w": 0.8555,
+          "efficiency": 0.905976,
+          "page": 1,
+          "row": 12,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 12,
+          "load_a": 3.0,
+          "vout_v": 3.295644,
+          "vin_v": 14.006,
+          "iin_a": 0.791799,
+          "pout_w": 9.886932,
+          "pin_w": 11.089932,
+          "loss_w": 1.203,
+          "efficiency": 0.891523,
+          "page": 1,
+          "row": 13,
+          "flags": [],
+          "table": 1
+        }
+      ],
+      "issues": [
+        {
+          "code": "zero_load",
+          "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+          "source": "demo-ch1-vin14-mode2.json",
+          "severity": "warning",
+          "page": 1,
+          "row": 2,
+          "field": "load_a",
+          "table": 1
+        }
+      ]
+    },
+    {
+      "run_id": "demo-ch2-vin8-mode1.json:3dc2f9fc0b03",
+      "source": "demo-ch2-vin8-mode1.json",
+      "sha256": "3dc2f9fc0b038ea18c25851cea25183e676542b77c86e890df49af61f925314f",
+      "synthetic": true,
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vin_v": 8.0,
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "1",
+        "timestamp": null
+      },
+      "measurements": [
+        {
+          "point": 1,
+          "load_a": 0.0,
+          "vout_v": 1.8027,
+          "vin_v": 8.0,
+          "iin_a": 0.008125,
+          "pout_w": 0.0,
+          "pin_w": 0.065,
+          "loss_w": 0.065,
+          "efficiency": 0.0,
+          "page": 1,
+          "row": 2,
+          "flags": [
+            "zero_load"
+          ],
+          "table": 1
+        },
+        {
+          "point": 2,
+          "load_a": 0.025,
+          "vout_v": 1.802655,
+          "vin_v": 8.00005,
+          "iin_a": 0.013875,
+          "pout_w": 0.045066,
+          "pin_w": 0.111001,
+          "loss_w": 0.065934,
+          "efficiency": 0.406001,
+          "page": 1,
+          "row": 3,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 3,
+          "load_a": 0.05,
+          "vout_v": 1.80261,
+          "vin_v": 8.0001,
+          "iin_a": 0.01964,
+          "pout_w": 0.090131,
+          "pin_w": 0.157118,
+          "loss_w": 0.066988,
+          "efficiency": 0.573648,
+          "page": 1,
+          "row": 4,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 4,
+          "load_a": 0.1,
+          "vout_v": 1.80252,
+          "vin_v": 8.0002,
+          "iin_a": 0.031212,
+          "pout_w": 0.180252,
+          "pin_w": 0.249702,
+          "loss_w": 0.06945,
+          "efficiency": 0.721868,
+          "page": 1,
+          "row": 5,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 5,
+          "load_a": 0.2,
+          "vout_v": 1.80234,
+          "vin_v": 8.0004,
+          "iin_a": 0.054531,
+          "pout_w": 0.360468,
+          "pin_w": 0.436268,
+          "loss_w": 0.0758,
+          "efficiency": 0.826254,
+          "page": 1,
+          "row": 6,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 6,
+          "load_a": 0.4,
+          "vout_v": 1.80198,
+          "vin_v": 8.0008,
+          "iin_a": 0.101864,
+          "pout_w": 0.720792,
+          "pin_w": 0.814992,
+          "loss_w": 0.0942,
+          "efficiency": 0.884416,
+          "page": 1,
+          "row": 7,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 7,
+          "load_a": 0.65,
+          "vout_v": 1.80153,
+          "vin_v": 8.0013,
+          "iin_a": 0.162334,
+          "pout_w": 1.170995,
+          "pin_w": 1.298882,
+          "loss_w": 0.127888,
+          "efficiency": 0.90154,
+          "page": 1,
+          "row": 8,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 8,
+          "load_a": 1.0,
+          "vout_v": 1.8009,
+          "vin_v": 8.002,
+          "iin_a": 0.249425,
+          "pout_w": 1.8009,
+          "pin_w": 1.9959,
+          "loss_w": 0.195,
+          "efficiency": 0.9023,
+          "page": 1,
+          "row": 9,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 9,
+          "load_a": 1.5,
+          "vout_v": 1.8,
+          "vin_v": 8.003,
+          "iin_a": 0.378764,
+          "pout_w": 2.7,
+          "pin_w": 3.03125,
+          "loss_w": 0.33125,
+          "efficiency": 0.890722,
+          "page": 1,
+          "row": 10,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 10,
+          "load_a": 2.0,
+          "vout_v": 1.7991,
+          "vin_v": 8.004,
+          "iin_a": 0.513893,
+          "pout_w": 3.5982,
+          "pin_w": 4.1132,
+          "loss_w": 0.515,
+          "efficiency": 0.874793,
+          "page": 1,
+          "row": 11,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 11,
+          "load_a": 2.5,
+          "vout_v": 1.7982,
+          "vin_v": 8.005,
+          "iin_a": 0.654809,
+          "pout_w": 4.4955,
+          "pin_w": 5.24175,
+          "loss_w": 0.74625,
+          "efficiency": 0.857633,
+          "page": 1,
+          "row": 12,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 12,
+          "load_a": 3.0,
+          "vout_v": 1.7973,
+          "vin_v": 8.006,
+          "iin_a": 0.801511,
+          "pout_w": 5.3919,
+          "pin_w": 6.4169,
+          "loss_w": 1.025,
+          "efficiency": 0.840266,
+          "page": 1,
+          "row": 13,
+          "flags": [],
+          "table": 1
+        }
+      ],
+      "issues": [
+        {
+          "code": "zero_load",
+          "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+          "source": "demo-ch2-vin8-mode1.json",
+          "severity": "warning",
+          "page": 1,
+          "row": 2,
+          "field": "load_a",
+          "table": 1
+        }
+      ]
+    },
+    {
+      "run_id": "demo-ch2-vin8-mode2.json:217b724f61d8",
+      "source": "demo-ch2-vin8-mode2.json",
+      "sha256": "217b724f61d898ce5d9a30b75f3ce2cb645eb60180db7a77310c02f4937f802d",
+      "synthetic": true,
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vin_v": 8.0,
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "2",
+        "timestamp": null
+      },
+      "measurements": [
+        {
+          "point": 1,
+          "load_a": 0.0,
+          "vout_v": 1.8027,
+          "vin_v": 8.0,
+          "iin_a": 0.0015,
+          "pout_w": 0.0,
+          "pin_w": 0.012,
+          "loss_w": 0.012,
+          "efficiency": 0.0,
+          "page": 1,
+          "row": 2,
+          "flags": [
+            "zero_load"
+          ],
+          "table": 1
+        },
+        {
+          "point": 2,
+          "load_a": 0.025,
+          "vout_v": 1.802655,
+          "vin_v": 8.00005,
+          "iin_a": 0.007252,
+          "pout_w": 0.045066,
+          "pin_w": 0.058016,
+          "loss_w": 0.01295,
+          "efficiency": 0.776787,
+          "page": 1,
+          "row": 3,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 3,
+          "load_a": 0.05,
+          "vout_v": 1.80261,
+          "vin_v": 8.0001,
+          "iin_a": 0.013022,
+          "pout_w": 0.090131,
+          "pin_w": 0.104181,
+          "loss_w": 0.01405,
+          "efficiency": 0.865138,
+          "page": 1,
+          "row": 4,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 4,
+          "load_a": 0.1,
+          "vout_v": 1.80252,
+          "vin_v": 8.0002,
+          "iin_a": 0.024618,
+          "pout_w": 0.180252,
+          "pin_w": 0.196952,
+          "loss_w": 0.0167,
+          "efficiency": 0.915208,
+          "page": 1,
+          "row": 5,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 5,
+          "load_a": 0.2,
+          "vout_v": 1.80234,
+          "vin_v": 8.0004,
+          "iin_a": 0.048031,
+          "pout_w": 0.360468,
+          "pin_w": 0.384268,
+          "loss_w": 0.0238,
+          "efficiency": 0.938064,
+          "page": 1,
+          "row": 6,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 6,
+          "load_a": 0.4,
+          "vout_v": 1.80198,
+          "vin_v": 8.0008,
+          "iin_a": 0.095739,
+          "pout_w": 0.720792,
+          "pin_w": 0.765992,
+          "loss_w": 0.0452,
+          "efficiency": 0.940992,
+          "page": 1,
+          "row": 7,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 7,
+          "load_a": 0.65,
+          "vout_v": 1.80153,
+          "vin_v": 8.0013,
+          "iin_a": 0.15703,
+          "pout_w": 1.170995,
+          "pin_w": 1.256445,
+          "loss_w": 0.08545,
+          "efficiency": 0.931991,
+          "page": 1,
+          "row": 8,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 8,
+          "load_a": 1.0,
+          "vout_v": 1.8009,
+          "vin_v": 8.002,
+          "iin_a": 0.245926,
+          "pout_w": 1.8009,
+          "pin_w": 1.9679,
+          "loss_w": 0.167,
+          "efficiency": 0.915138,
+          "page": 1,
+          "row": 9,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 9,
+          "load_a": 1.5,
+          "vout_v": 1.8,
+          "vin_v": 8.003,
+          "iin_a": 0.37917,
+          "pout_w": 2.7,
+          "pin_w": 3.0345,
+          "loss_w": 0.3345,
+          "efficiency": 0.889768,
+          "page": 1,
+          "row": 10,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 10,
+          "load_a": 2.0,
+          "vout_v": 1.7991,
+          "vin_v": 8.004,
+          "iin_a": 0.519765,
+          "pout_w": 3.5982,
+          "pin_w": 4.1602,
+          "loss_w": 0.562,
+          "efficiency": 0.86491,
+          "page": 1,
+          "row": 11,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 11,
+          "load_a": 2.5,
+          "vout_v": 1.7982,
+          "vin_v": 8.005,
+          "iin_a": 0.667708,
+          "pout_w": 4.4955,
+          "pin_w": 5.345,
+          "loss_w": 0.8495,
+          "efficiency": 0.841066,
+          "page": 1,
+          "row": 12,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 12,
+          "load_a": 3.0,
+          "vout_v": 1.7973,
+          "vin_v": 8.006,
+          "iin_a": 0.822995,
+          "pout_w": 5.3919,
+          "pin_w": 6.5889,
+          "loss_w": 1.197,
+          "efficiency": 0.818331,
+          "page": 1,
+          "row": 13,
+          "flags": [],
+          "table": 1
+        }
+      ],
+      "issues": [
+        {
+          "code": "zero_load",
+          "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+          "source": "demo-ch2-vin8-mode2.json",
+          "severity": "warning",
+          "page": 1,
+          "row": 2,
+          "field": "load_a",
+          "table": 1
+        }
+      ]
+    },
+    {
+      "run_id": "demo-ch2-vin14-mode1.json:a5e899abb559",
+      "source": "demo-ch2-vin14-mode1.json",
+      "sha256": "a5e899abb5599987b9ea1c507612a7d135abeffd239f49cd38d299681758740c",
+      "synthetic": true,
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vin_v": 14.0,
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "1",
+        "timestamp": null
+      },
+      "measurements": [
+        {
+          "point": 1,
+          "load_a": 0.0,
+          "vout_v": 1.803024,
+          "vin_v": 14.0,
+          "iin_a": 0.005071,
+          "pout_w": 0.0,
+          "pin_w": 0.071,
+          "loss_w": 0.071,
+          "efficiency": 0.0,
+          "page": 1,
+          "row": 2,
+          "flags": [
+            "zero_load"
+          ],
+          "table": 1
+        },
+        {
+          "point": 2,
+          "load_a": 0.025,
+          "vout_v": 1.802979,
+          "vin_v": 14.00005,
+          "iin_a": 0.008358,
+          "pout_w": 0.045074,
+          "pin_w": 0.117009,
+          "loss_w": 0.071934,
+          "efficiency": 0.385223,
+          "page": 1,
+          "row": 3,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 3,
+          "load_a": 0.05,
+          "vout_v": 1.802934,
+          "vin_v": 14.0001,
+          "iin_a": 0.011652,
+          "pout_w": 0.090147,
+          "pin_w": 0.163134,
+          "loss_w": 0.072988,
+          "efficiency": 0.552592,
+          "page": 1,
+          "row": 4,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 4,
+          "load_a": 0.1,
+          "vout_v": 1.802844,
+          "vin_v": 14.0002,
+          "iin_a": 0.018266,
+          "pout_w": 0.180284,
+          "pin_w": 0.255734,
+          "loss_w": 0.07545,
+          "efficiency": 0.704967,
+          "page": 1,
+          "row": 5,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 5,
+          "load_a": 0.2,
+          "vout_v": 1.802664,
+          "vin_v": 14.0004,
+          "iin_a": 0.031594,
+          "pout_w": 0.360533,
+          "pin_w": 0.442333,
+          "loss_w": 0.0818,
+          "efficiency": 0.815071,
+          "page": 1,
+          "row": 6,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 6,
+          "load_a": 0.4,
+          "vout_v": 1.802304,
+          "vin_v": 14.0008,
+          "iin_a": 0.058648,
+          "pout_w": 0.720922,
+          "pin_w": 0.821122,
+          "loss_w": 0.1002,
+          "efficiency": 0.877972,
+          "page": 1,
+          "row": 7,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 7,
+          "load_a": 0.65,
+          "vout_v": 1.801854,
+          "vin_v": 14.0013,
+          "iin_a": 0.093212,
+          "pout_w": 1.171205,
+          "pin_w": 1.305093,
+          "loss_w": 0.133888,
+          "efficiency": 0.897411,
+          "page": 1,
+          "row": 8,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 8,
+          "load_a": 1.0,
+          "vout_v": 1.801224,
+          "vin_v": 14.002,
+          "iin_a": 0.142996,
+          "pout_w": 1.801224,
+          "pin_w": 2.002224,
+          "loss_w": 0.201,
+          "efficiency": 0.899612,
+          "page": 1,
+          "row": 9,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 9,
+          "load_a": 1.5,
+          "vout_v": 1.800324,
+          "vin_v": 14.003,
+          "iin_a": 0.216935,
+          "pout_w": 2.700486,
+          "pin_w": 3.037736,
+          "loss_w": 0.33725,
+          "efficiency": 0.88898,
+          "page": 1,
+          "row": 10,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 10,
+          "load_a": 2.0,
+          "vout_v": 1.799424,
+          "vin_v": 14.004,
+          "iin_a": 0.294191,
+          "pout_w": 3.598848,
+          "pin_w": 4.119848,
+          "loss_w": 0.521,
+          "efficiency": 0.873539,
+          "page": 1,
+          "row": 11,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 11,
+          "load_a": 2.5,
+          "vout_v": 1.798524,
+          "vin_v": 14.005,
+          "iin_a": 0.374763,
+          "pout_w": 4.49631,
+          "pin_w": 5.24856,
+          "loss_w": 0.75225,
+          "efficiency": 0.856675,
+          "page": 1,
+          "row": 12,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 12,
+          "load_a": 3.0,
+          "vout_v": 1.797624,
+          "vin_v": 14.006,
+          "iin_a": 0.458651,
+          "pout_w": 5.392872,
+          "pin_w": 6.423872,
+          "loss_w": 1.031,
+          "efficiency": 0.839505,
+          "page": 1,
+          "row": 13,
+          "flags": [],
+          "table": 1
+        }
+      ],
+      "issues": [
+        {
+          "code": "zero_load",
+          "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+          "source": "demo-ch2-vin14-mode1.json",
+          "severity": "warning",
+          "page": 1,
+          "row": 2,
+          "field": "load_a",
+          "table": 1
+        }
+      ]
+    },
+    {
+      "run_id": "demo-ch2-vin14-mode2.json:247b42db214c",
+      "source": "demo-ch2-vin14-mode2.json",
+      "sha256": "247b42db214ca17c219e7f152b99b76b8e047c34c84271636f9e78878514a463",
+      "synthetic": true,
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vin_v": 14.0,
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "2",
+        "timestamp": null
+      },
+      "measurements": [
+        {
+          "point": 1,
+          "load_a": 0.0,
+          "vout_v": 1.803024,
+          "vin_v": 14.0,
+          "iin_a": 0.001286,
+          "pout_w": 0.0,
+          "pin_w": 0.018,
+          "loss_w": 0.018,
+          "efficiency": null,
+          "page": 1,
+          "row": 2,
+          "flags": [
+            "undefined_efficiency",
+            "zero_load"
+          ],
+          "table": 1
+        },
+        {
+          "point": 2,
+          "load_a": 0.025,
+          "vout_v": 1.802979,
+          "vin_v": 14.00005,
+          "iin_a": 0.004573,
+          "pout_w": 0.045074,
+          "pin_w": 0.064024,
+          "loss_w": 0.01895,
+          "efficiency": 0.704019,
+          "page": 1,
+          "row": 3,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 3,
+          "load_a": 0.05,
+          "vout_v": 1.802934,
+          "vin_v": 14.0001,
+          "iin_a": 0.007871,
+          "pout_w": 0.090147,
+          "pin_w": 0.110197,
+          "loss_w": 0.02005,
+          "efficiency": 0.818053,
+          "page": 1,
+          "row": 4,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 4,
+          "load_a": 0.1,
+          "vout_v": 1.802844,
+          "vin_v": 14.0002,
+          "iin_a": 0.014499,
+          "pout_w": 0.180284,
+          "pin_w": 0.202984,
+          "loss_w": 0.0227,
+          "efficiency": 0.888169,
+          "page": 1,
+          "row": 5,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 5,
+          "load_a": 0.2,
+          "vout_v": 1.802664,
+          "vin_v": 14.0004,
+          "iin_a": 0.02788,
+          "pout_w": 0.360533,
+          "pin_w": 0.390333,
+          "loss_w": 0.0298,
+          "efficiency": 0.923655,
+          "page": 1,
+          "row": 6,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 6,
+          "load_a": 0.4,
+          "vout_v": 1.802304,
+          "vin_v": 14.0008,
+          "iin_a": 0.055148,
+          "pout_w": 0.720922,
+          "pin_w": 0.772122,
+          "loss_w": 0.0512,
+          "efficiency": 0.933689,
+          "page": 1,
+          "row": 7,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 7,
+          "load_a": 0.65,
+          "vout_v": 1.801854,
+          "vin_v": 14.0013,
+          "iin_a": 0.090181,
+          "pout_w": 1.171205,
+          "pin_w": 1.262655,
+          "loss_w": 0.09145,
+          "efficiency": 0.927573,
+          "page": 1,
+          "row": 8,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 8,
+          "load_a": 1.0,
+          "vout_v": 1.801224,
+          "vin_v": 14.002,
+          "iin_a": 0.140996,
+          "pout_w": 1.801224,
+          "pin_w": 1.974224,
+          "loss_w": 0.173,
+          "efficiency": 0.912371,
+          "page": 1,
+          "row": 9,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 9,
+          "load_a": 1.5,
+          "vout_v": 1.800324,
+          "vin_v": 14.003,
+          "iin_a": 0.217167,
+          "pout_w": 2.700486,
+          "pin_w": 3.040986,
+          "loss_w": 0.3405,
+          "efficiency": 0.88803,
+          "page": 1,
+          "row": 10,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 10,
+          "load_a": 2.0,
+          "vout_v": 1.799424,
+          "vin_v": 14.004,
+          "iin_a": 0.297547,
+          "pout_w": 3.598848,
+          "pin_w": 4.166848,
+          "loss_w": 0.568,
+          "efficiency": 0.863686,
+          "page": 1,
+          "row": 11,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 11,
+          "load_a": 2.5,
+          "vout_v": 1.798524,
+          "vin_v": 14.005,
+          "iin_a": 0.382136,
+          "pout_w": 4.49631,
+          "pin_w": 5.35181,
+          "loss_w": 0.8555,
+          "efficiency": 0.840148,
+          "page": 1,
+          "row": 12,
+          "flags": [],
+          "table": 1
+        },
+        {
+          "point": 12,
+          "load_a": 3.0,
+          "vout_v": 1.797624,
+          "vin_v": 14.006,
+          "iin_a": 0.470932,
+          "pout_w": 5.392872,
+          "pin_w": 6.595872,
+          "loss_w": 1.203,
+          "efficiency": 0.817613,
+          "page": 1,
+          "row": 13,
+          "flags": [],
+          "table": 1
+        }
+      ],
+      "issues": [
+        {
+          "code": "undefined_efficiency",
+          "message": "Missing/non-finite efficiency retained as null, not zero.",
+          "source": "demo-ch2-vin14-mode2.json",
+          "severity": "warning",
+          "page": 1,
+          "row": 2,
+          "field": "efficiency",
+          "table": 1
+        },
+        {
+          "code": "zero_load",
+          "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+          "source": "demo-ch2-vin14-mode2.json",
+          "severity": "warning",
+          "page": 1,
+          "row": 2,
+          "field": "load_a",
+          "table": 1
+        }
+      ]
+    }
+  ],
+  "summaries": [
+    {
+      "source": "demo-ch1-vin8-mode1.json",
+      "run_id": "demo-ch1-vin8-mode1.json:b77fe7588850",
+      "sha256": "b77fe75888503ea9cac644a3ed2e1eefca19b0164a21e987e26a662ba6754f64",
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vin_v": 8.0,
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "1",
+        "timestamp": null
+      },
+      "points": 12,
+      "peak_efficiency_pct": 94.4232,
+      "peak_load_a": 1.0,
+      "load_min_a": 0.0,
+      "load_max_a": 3.0,
+      "vout_mean_v": 3.3018081666666665,
+      "vout_min_v": 3.29505,
+      "vout_max_v": 3.30495,
+      "load_regulation_positive_pct": 0.09515493253216825,
+      "load_regulation_negative_pct": -0.20468077869858275,
+      "load_regulation_span_pct": 0.29983571123075103
+    },
+    {
+      "source": "demo-ch1-vin8-mode2.json",
+      "run_id": "demo-ch1-vin8-mode2.json:1682cc848de0",
+      "sha256": "1682cc848de07aefd41ea210e0ca5d296a59f430b92c7a0b61eddc6c0449f546",
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vin_v": 8.0,
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "2",
+        "timestamp": null
+      },
+      "points": 12,
+      "peak_efficiency_pct": 96.6926,
+      "peak_load_a": 0.4,
+      "load_min_a": 0.0,
+      "load_max_a": 3.0,
+      "vout_mean_v": 3.3018081666666665,
+      "vout_min_v": 3.29505,
+      "vout_max_v": 3.30495,
+      "load_regulation_positive_pct": 0.09515493253216825,
+      "load_regulation_negative_pct": -0.20468077869858275,
+      "load_regulation_span_pct": 0.29983571123075103
+    },
+    {
+      "source": "demo-ch1-vin14-mode1.json",
+      "run_id": "demo-ch1-vin14-mode1.json:83f8aa4625a6",
+      "sha256": "83f8aa4625a64d5173724eb31edc8af72ba8dff66b4605c557c3596232cd4e27",
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vin_v": 14.0,
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "1",
+        "timestamp": null
+      },
+      "points": 12,
+      "peak_efficiency_pct": 94.2625,
+      "peak_load_a": 1.0,
+      "load_min_a": 0.0,
+      "load_max_a": 3.0,
+      "vout_mean_v": 3.3024021666666665,
+      "vout_min_v": 3.295644,
+      "vout_max_v": 3.305544,
+      "load_regulation_positive_pct": 0.09513781710313463,
+      "load_regulation_negative_pct": -0.20464396295767326,
+      "load_regulation_span_pct": 0.29978178006080786
+    },
+    {
+      "source": "demo-ch1-vin14-mode2.json",
+      "run_id": "demo-ch1-vin14-mode2.json:967b952c91e4",
+      "sha256": "967b952c91e474da2cd9efbd6d2479510785acabe81507fd872b54343abdc7ce",
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vin_v": 14.0,
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "2",
+        "timestamp": null
+      },
+      "points": 12,
+      "peak_efficiency_pct": 96.2706,
+      "peak_load_a": 0.4,
+      "load_min_a": 0.0,
+      "load_max_a": 3.0,
+      "vout_mean_v": 3.3024021666666665,
+      "vout_min_v": 3.295644,
+      "vout_max_v": 3.305544,
+      "load_regulation_positive_pct": 0.09513781710313463,
+      "load_regulation_negative_pct": -0.20464396295767326,
+      "load_regulation_span_pct": 0.29978178006080786
+    },
+    {
+      "source": "demo-ch2-vin8-mode1.json",
+      "run_id": "demo-ch2-vin8-mode1.json:3dc2f9fc0b03",
+      "sha256": "3dc2f9fc0b038ea18c25851cea25183e676542b77c86e890df49af61f925314f",
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vin_v": 8.0,
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "1",
+        "timestamp": null
+      },
+      "points": 12,
+      "peak_efficiency_pct": 90.23,
+      "peak_load_a": 1.0,
+      "load_min_a": 0.0,
+      "load_max_a": 3.0,
+      "vout_mean_v": 1.80098625,
+      "vout_min_v": 1.7973,
+      "vout_max_v": 1.8027,
+      "load_regulation_positive_pct": 0.09515619566778805,
+      "load_regulation_negative_pct": -0.20467951934669756,
+      "load_regulation_span_pct": 0.29983571501448564
+    },
+    {
+      "source": "demo-ch2-vin8-mode2.json",
+      "run_id": "demo-ch2-vin8-mode2.json:217b724f61d8",
+      "sha256": "217b724f61d898ce5d9a30b75f3ce2cb645eb60180db7a77310c02f4937f802d",
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vin_v": 8.0,
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "2",
+        "timestamp": null
+      },
+      "points": 12,
+      "peak_efficiency_pct": 94.09920000000001,
+      "peak_load_a": 0.4,
+      "load_min_a": 0.0,
+      "load_max_a": 3.0,
+      "vout_mean_v": 1.80098625,
+      "vout_min_v": 1.7973,
+      "vout_max_v": 1.8027,
+      "load_regulation_positive_pct": 0.09515619566778805,
+      "load_regulation_negative_pct": -0.20467951934669756,
+      "load_regulation_span_pct": 0.29983571501448564
+    },
+    {
+      "source": "demo-ch2-vin14-mode1.json",
+      "run_id": "demo-ch2-vin14-mode1.json:a5e899abb559",
+      "sha256": "a5e899abb5599987b9ea1c507612a7d135abeffd239f49cd38d299681758740c",
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vin_v": 14.0,
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "1",
+        "timestamp": null
+      },
+      "points": 12,
+      "peak_efficiency_pct": 89.96119999999999,
+      "peak_load_a": 1.0,
+      "load_min_a": 0.0,
+      "load_max_a": 3.0,
+      "vout_mean_v": 1.80131025,
+      "vout_min_v": 1.797624,
+      "vout_max_v": 1.803024,
+      "load_regulation_positive_pct": 0.09513908001133943,
+      "load_regulation_negative_pct": -0.2046427038318297,
+      "load_regulation_span_pct": 0.2997817838431691
+    },
+    {
+      "source": "demo-ch2-vin14-mode2.json",
+      "run_id": "demo-ch2-vin14-mode2.json:247b42db214c",
+      "sha256": "247b42db214ca17c219e7f152b99b76b8e047c34c84271636f9e78878514a463",
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vin_v": 14.0,
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "2",
+        "timestamp": null
+      },
+      "points": 12,
+      "peak_efficiency_pct": 93.3689,
+      "peak_load_a": 0.4,
+      "load_min_a": 0.0,
+      "load_max_a": 3.0,
+      "vout_mean_v": 1.80131025,
+      "vout_min_v": 1.797624,
+      "vout_max_v": 1.803024,
+      "load_regulation_positive_pct": 0.09513908001133943,
+      "load_regulation_negative_pct": -0.2046427038318297,
+      "load_regulation_span_pct": 0.2997817838431691
+    }
+  ],
+  "line_regulation": [
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "1"
+      },
+      "sources": [
+        "demo-ch1-vin8-mode1.json",
+        "demo-ch1-vin14-mode1.json"
+      ],
+      "status": "ok",
+      "load_a": 0.0,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        3.30495,
+        3.305544
+      ],
+      "positive_pct": 0.008985712716786788,
+      "negative_pct": -0.00898571271677335,
+      "span_pct": 0.01797142543356014,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "1"
+      },
+      "sources": [
+        "demo-ch1-vin8-mode1.json",
+        "demo-ch1-vin14-mode1.json"
+      ],
+      "status": "ok",
+      "load_a": 1.5,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        3.3,
+        3.300594
+      ],
+      "positive_pct": 0.008999190072899918,
+      "negative_pct": -0.008999190072886461,
+      "span_pct": 0.01799838014578638,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "1"
+      },
+      "sources": [
+        "demo-ch1-vin8-mode1.json",
+        "demo-ch1-vin14-mode1.json"
+      ],
+      "status": "ok",
+      "load_a": 3.0,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        3.29505,
+        3.295644
+      ],
+      "positive_pct": 0.0090127079181711,
+      "negative_pct": -0.009012707918157625,
+      "span_pct": 0.018025415836328725,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "2"
+      },
+      "sources": [
+        "demo-ch1-vin8-mode2.json",
+        "demo-ch1-vin14-mode2.json"
+      ],
+      "status": "ok",
+      "load_a": 0.0,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        3.30495,
+        3.305544
+      ],
+      "positive_pct": 0.008985712716786788,
+      "negative_pct": -0.00898571271677335,
+      "span_pct": 0.01797142543356014,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "2"
+      },
+      "sources": [
+        "demo-ch1-vin8-mode2.json",
+        "demo-ch1-vin14-mode2.json"
+      ],
+      "status": "ok",
+      "load_a": 1.5,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        3.3,
+        3.300594
+      ],
+      "positive_pct": 0.008999190072899918,
+      "negative_pct": -0.008999190072886461,
+      "span_pct": 0.01799838014578638,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "1",
+        "vout_v": 3.3,
+        "frequency_khz": 600.0,
+        "mode": "2"
+      },
+      "sources": [
+        "demo-ch1-vin8-mode2.json",
+        "demo-ch1-vin14-mode2.json"
+      ],
+      "status": "ok",
+      "load_a": 3.0,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        3.29505,
+        3.295644
+      ],
+      "positive_pct": 0.0090127079181711,
+      "negative_pct": -0.009012707918157625,
+      "span_pct": 0.018025415836328725,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "1"
+      },
+      "sources": [
+        "demo-ch2-vin8-mode1.json",
+        "demo-ch2-vin14-mode1.json"
+      ],
+      "status": "ok",
+      "load_a": 0.0,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        1.8027,
+        1.803024
+      ],
+      "positive_pct": 0.00898571271678007,
+      "negative_pct": -0.00898571271678007,
+      "span_pct": 0.01797142543356014,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "1"
+      },
+      "sources": [
+        "demo-ch2-vin8-mode1.json",
+        "demo-ch2-vin14-mode1.json"
+      ],
+      "status": "ok",
+      "load_a": 1.5,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        1.8,
+        1.800324
+      ],
+      "positive_pct": 0.008999190072893189,
+      "negative_pct": -0.008999190072893189,
+      "span_pct": 0.017998380145786377,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "1"
+      },
+      "sources": [
+        "demo-ch2-vin8-mode1.json",
+        "demo-ch2-vin14-mode1.json"
+      ],
+      "status": "ok",
+      "load_a": 3.0,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        1.7973,
+        1.797624
+      ],
+      "positive_pct": 0.009012707918176713,
+      "negative_pct": -0.00901270791816436,
+      "span_pct": 0.018025415836341076,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "2"
+      },
+      "sources": [
+        "demo-ch2-vin8-mode2.json",
+        "demo-ch2-vin14-mode2.json"
+      ],
+      "status": "ok",
+      "load_a": 0.0,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        1.8027,
+        1.803024
+      ],
+      "positive_pct": 0.00898571271678007,
+      "negative_pct": -0.00898571271678007,
+      "span_pct": 0.01797142543356014,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "2"
+      },
+      "sources": [
+        "demo-ch2-vin8-mode2.json",
+        "demo-ch2-vin14-mode2.json"
+      ],
+      "status": "ok",
+      "load_a": 1.5,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        1.8,
+        1.800324
+      ],
+      "positive_pct": 0.008999190072893189,
+      "negative_pct": -0.008999190072893189,
+      "span_pct": 0.017998380145786377,
+      "interpolated": false
+    },
+    {
+      "conditions": {
+        "sample_id": "DEMO",
+        "channel": "2",
+        "vout_v": 1.8,
+        "frequency_khz": 600.0,
+        "mode": "2"
+      },
+      "sources": [
+        "demo-ch2-vin8-mode2.json",
+        "demo-ch2-vin14-mode2.json"
+      ],
+      "status": "ok",
+      "load_a": 3.0,
+      "vin_values_v": [
+        8.0,
+        14.0
+      ],
+      "vout_values_v": [
+        1.7973,
+        1.797624
+      ],
+      "positive_pct": 0.009012707918176713,
+      "negative_pct": -0.00901270791816436,
+      "span_pct": 0.018025415836341076,
+      "interpolated": false
+    }
+  ],
+  "issues": [
+    {
+      "code": "zero_load",
+      "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+      "source": "demo-ch1-vin8-mode1.json",
+      "severity": "warning",
+      "page": 1,
+      "row": 2,
+      "field": "load_a",
+      "table": 1
+    },
+    {
+      "code": "zero_load",
+      "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+      "source": "demo-ch1-vin8-mode2.json",
+      "severity": "warning",
+      "page": 1,
+      "row": 2,
+      "field": "load_a",
+      "table": 1
+    },
+    {
+      "code": "zero_load",
+      "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+      "source": "demo-ch1-vin14-mode1.json",
+      "severity": "warning",
+      "page": 1,
+      "row": 2,
+      "field": "load_a",
+      "table": 1
+    },
+    {
+      "code": "zero_load",
+      "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+      "source": "demo-ch1-vin14-mode2.json",
+      "severity": "warning",
+      "page": 1,
+      "row": 2,
+      "field": "load_a",
+      "table": 1
+    },
+    {
+      "code": "zero_load",
+      "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+      "source": "demo-ch2-vin8-mode1.json",
+      "severity": "warning",
+      "page": 1,
+      "row": 2,
+      "field": "load_a",
+      "table": 1
+    },
+    {
+      "code": "zero_load",
+      "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+      "source": "demo-ch2-vin8-mode2.json",
+      "severity": "warning",
+      "page": 1,
+      "row": 2,
+      "field": "load_a",
+      "table": 1
+    },
+    {
+      "code": "zero_load",
+      "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+      "source": "demo-ch2-vin14-mode1.json",
+      "severity": "warning",
+      "page": 1,
+      "row": 2,
+      "field": "load_a",
+      "table": 1
+    },
+    {
+      "code": "undefined_efficiency",
+      "message": "Missing/non-finite efficiency retained as null, not zero.",
+      "source": "demo-ch2-vin14-mode2.json",
+      "severity": "warning",
+      "page": 1,
+      "row": 2,
+      "field": "efficiency",
+      "table": 1
+    },
+    {
+      "code": "zero_load",
+      "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+      "source": "demo-ch2-vin14-mode2.json",
+      "severity": "warning",
+      "page": 1,
+      "row": 2,
+      "field": "load_a",
+      "table": 1
+    }
+  ]
+}

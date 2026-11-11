@@ -1,0 +1,92 @@
+[
+  {
+    "code": "zero_load",
+    "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+    "source": "demo-ch1-vin8-mode1.json",
+    "severity": "warning",
+    "page": 1,
+    "row": 2,
+    "field": "load_a",
+    "table": 1
+  },
+  {
+    "code": "zero_load",
+    "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+    "source": "demo-ch1-vin8-mode2.json",
+    "severity": "warning",
+    "page": 1,
+    "row": 2,
+    "field": "load_a",
+    "table": 1
+  },
+  {
+    "code": "zero_load",
+    "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+    "source": "demo-ch1-vin14-mode1.json",
+    "severity": "warning",
+    "page": 1,
+    "row": 2,
+    "field": "load_a",
+    "table": 1
+  },
+  {
+    "code": "zero_load",
+    "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+    "source": "demo-ch1-vin14-mode2.json",
+    "severity": "warning",
+    "page": 1,
+    "row": 2,
+    "field": "load_a",
+    "table": 1
+  },
+  {
+    "code": "zero_load",
+    "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+    "source": "demo-ch2-vin8-mode1.json",
+    "severity": "warning",
+    "page": 1,
+    "row": 2,
+    "field": "load_a",
+    "table": 1
+  },
+  {
+    "code": "zero_load",
+    "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+    "source": "demo-ch2-vin8-mode2.json",
+    "severity": "warning",
+    "page": 1,
+    "row": 2,
+    "field": "load_a",
+    "table": 1
+  },
+  {
+    "code": "zero_load",
+    "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+    "source": "demo-ch2-vin14-mode1.json",
+    "severity": "warning",
+    "page": 1,
+    "row": 2,
+    "field": "load_a",
+    "table": 1
+  },
+  {
+    "code": "undefined_efficiency",
+    "message": "Missing/non-finite efficiency retained as null, not zero.",
+    "source": "demo-ch2-vin14-mode2.json",
+    "severity": "warning",
+    "page": 1,
+    "row": 2,
+    "field": "efficiency",
+    "table": 1
+  },
+  {
+    "code": "zero_load",
+    "message": "Zero-load row retained; excluded only when using a logarithmic x-axis.",
+    "source": "demo-ch2-vin14-mode2.json",
+    "severity": "warning",
+    "page": 1,
+    "row": 2,
+    "field": "load_a",
+    "table": 1
+  }
+]

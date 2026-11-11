@@ -1,0 +1,37 @@
+# Environment and tooling
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+.DS_Store
+Thumbs.db
+
+# Never commit credentials, personal material, or laboratory inputs
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+private*/
+inputs/
+data/
+outputs/
+*.pdf
+*.xlsx
+*.xls
+*.log
+*.zip
+
+# Explicitly allow ONLY the generated synthetic demo's inputs and workbook.
+# These exceptions keep its published manifest and example artifacts complete.
+!docs/demo/inputs/
+!docs/demo/inputs/*.json
+!docs/demo/analysis.xlsx

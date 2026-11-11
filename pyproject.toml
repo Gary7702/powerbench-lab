@@ -1,0 +1,90 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "powerbench-lab"
+version = "0.1.0"
+description = "Traceable DC-DC converter test analysis: instrument reports to validated data and offline reports."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Gary Feng"}]
+license = {file = "LICENSE"}
+keywords = ["power-electronics", "test-automation", "data-analysis", "efficiency", "instrumentation"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+dependencies = [
+  "pdfplumber>=0.11,<0.12",
+  "matplotlib>=3.9,<4",
+  "XlsxWriter>=3.2,<4",
+  "pyparsing>=3.1,<3.3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "pytest-cov>=6,<8",
+  "ruff>=0.11,<1",
+  "mypy>=1.15,<2",
+  "build>=1.2,<2",
+]
+
+[project.urls]
+Homepage = "https://github.com/Gary7702/powerbench-lab"
+Repository = "https://github.com/Gary7702/powerbench-lab"
+Issues = "https://github.com/Gary7702/powerbench-lab/issues"
+
+[project.scripts]
+powerbench = "powerbench.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/powerbench"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "examples", "docs", "README.md", "README.zh-CN.md", "pyproject.toml", "LICENSE", "NOTICE", ".github"]
+exclude = ["docs/demo", "docs/assets/*.png", "private*", "outputs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+# Keep test outputs for inspection; never automatically delete historical runs.
+tmp_path_retention_count = 100000
+tmp_path_retention_policy = "all"
+
+[tool.coverage.run]
+branch = true
+source = ["powerbench"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 85
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["src/powerbench"]
+check_untyped_defs = true
+disallow_untyped_defs = true
+warn_unused_ignores = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = ["pdfplumber.*", "xlsxwriter.*", "matplotlib.*", "numpy.*"]
+ignore_missing_imports = true
+follow_imports = "skip"
+follow_imports_for_stubs = true

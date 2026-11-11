@@ -1,0 +1,13 @@
+PowerBench Lab is a portfolio-oriented redevelopment of an instrument-data
+processing workflow. It demonstrates software engineering around converter
+characterization, not a released commercial test system or device certification.
+
+All distributed examples and demo measurements are purpose-built synthetic data.
+No employer reports, raw instrument PDFs, personal CVs, confidential product
+identifiers, or original spreadsheets are included. The demo loss equation is
+illustrative only and is not fitted to any real device.
+
+No employer, instrument vendor, or institution endorses this project.
+Third-party packages retain their own licenses. See LICENSE for this project's
+MIT license. Responsibility for permission to process or publish laboratory
+inputs remains with the person supplying them.
